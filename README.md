@@ -101,9 +101,9 @@ Ensure the backend server is running and the API base URL is configured in axios
 
 ## 👤 Author
 
-Shyam 
-Aryan
-Ishwar
+Shyam ,
+Aryan,
+Ishwar,
 Mangesh
  
 Final Year Computer Engineering Student
