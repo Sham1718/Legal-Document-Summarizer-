@@ -28,7 +28,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
-                .cors(Customizer.withDefaults()) // ✅ ENABLE CORS
+                .cors(Customizer.withDefaults()) 
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/auth/register",
@@ -47,7 +47,7 @@ public class SecurityConfig {
         return http.build();
     }
 
-    // 🔥 THIS IS WHAT FIXES THE BROWSER ERROR
+    
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
